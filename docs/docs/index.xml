@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Python</title>
+    <link>https://tpasternak.github.io/p2020/docs/</link>
+    <description>Recent content in Docs on Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl-PL</language>
+    <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tpasternak.github.io/p2020/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zmienne, If, While</title>
+      <link>https://tpasternak.github.io/p2020/docs/01_if_while/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/01_if_while/</guid>
+      <description>Zmienne, if, while #  Arytmetyka #  print(1 + 5) # Wypisz wynik dodawania 1+5 print(5 % 2) # Wypisz resztę z dzielenia 5/2 print(5 % 2 == 0) # Wypisz, czy reszta z dzielenia 5/2 jest równa 0 Operatory #   2 + 2 2 * 2 2 ** 2 10 % 3 - reszta z dzielenia (10 % 3 == 1) 10 / 3 - dzielenie (10 / 3 == 3.</description>
+    </item>
+    
+    <item>
+      <title>Funkcje</title>
+      <link>https://tpasternak.github.io/p2020/docs/02_functions/</link>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/02_functions/</guid>
+      <description>Funkcje #  Liczby pierwsze - kontynuacja #  z = 1 while z &amp;lt; n: z = z + 1 if n == z: print(&amp;#34;Ta liczba jest liczbą pierwszą&amp;#34;) break if n % z == 0: print(f&amp;#34;Ta liczba nie jest liczbą pierwszą. Jest podzielna przez {z}&amp;#34;) break Co to jest funkcja? #  Funkcja to podprogram, którego używamy do podzielenia naszego właściwego programu na mniejsze części.
+Funkcje składają się z</description>
+    </item>
+    
+    <item>
+      <title>String, Input, Hurra</title>
+      <link>https://tpasternak.github.io/p2020/docs/03_string_input_fizzbuzz/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/03_string_input_fizzbuzz/</guid>
+      <description>String, Input, Hurra #  Typ String #  Zmienne typu int
+a = 5 print(type(a)) # &amp;gt;&amp;gt; &amp;#39;int&amp;#39; Zmienne typu string
+a = &amp;#34;5&amp;#34; print(type(a)) # &amp;gt;&amp;gt; &amp;#39;str&amp;#39; Konkatenacja - operatorem + możemy łączyć zmienne typu string
+a = &amp;#34;Dzień &amp;#34; b = &amp;#34;dobry&amp;#34; print(a + b) # &amp;gt;&amp;gt; Dzień dobry Konwersje - funkcjami int i str możemy konwertować typy zmiennych
+a = &amp;#34;1&amp;#34; b = &amp;#34;1&amp;#34; print(a + b) # wypisze 11 print(int(a) + int(b)) # wypisze 2 c = int(a) + int(b) print(&amp;#34;liczba: &amp;#34; + str(c)) # żeby połączyć liczbę int z tekstem, trzeba ją zamienić na str Interpolacja - możemy wstawić zawartość zmiennej bezpośrednio do stringa</description>
+    </item>
+    
+    <item>
+      <title>For, List</title>
+      <link>https://tpasternak.github.io/p2020/docs/04_for_list/</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/04_for_list/</guid>
+      <description>Pętla for, listy #  Pętla for #  W niektórych przypadkach zamiast pętli while możemy użyć prostszej pętli for
+Weźmy program, który liczy iloczyn liczb od 1 do 5 z pętlą while
+i = 1 iloczyn = 1 while i &amp;lt;= 5: iloczyn = iloczyn * i i = i + 1 print(iloczyn) W tym przypadku musimy pamiętać o przypisaniu wartości 0 do zmiennej i, oraz o zwiększaniu jej wartości w odpowiednim miejscu.</description>
+    </item>
+    
+    <item>
+      <title>Input</title>
+      <link>https://tpasternak.github.io/p2020/docs/05_input/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/05_input/</guid>
+      <description>Input #  Pojedynczy string wczytujemy po prostu funkcją input
+wejscie = input() # in &amp;gt;&amp;gt; abc print(wejscie + &amp;#34;d&amp;#34;) # out&amp;lt;&amp;lt; abcd Jeżeli chcemy wczytać zmienną typu int, należy pamiętać o konwersji
+i = int(input()) # in &amp;gt;&amp;gt; 6 print(i + 1) # out&amp;lt;&amp;lt; 7 Jeżeli chcemy odczytać sekwencję stringów oddzieloną spacjami, należy użyć metody .split()
+wejscie = input().split() # in &amp;gt;&amp;gt; abc def ghi  print(wejscie) # out&amp;lt;&amp;lt; [&amp;#39;abc&amp;#39;, &amp;#39;def&amp;#39;, &amp;#39;ghi&amp;#39;] Jeżeli natomiast chcemy odczytać sekwencję intów, należy najpierw wczytać je jako wartości string a następnie przekonwertować do int</description>
+    </item>
+    
+    <item>
+      <title>List 2</title>
+      <link>https://tpasternak.github.io/p2020/docs/06_list_2/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/06_list_2/</guid>
+      <description>List 2 #  Wyszukiwanie indeksu: #  a = [1,2,3,4] print(a.index(4)) # &amp;lt;&amp;lt; 3 Najmniejszy/największy element: #  a = [1, 2, 3, 4] print(max(a)) print(min(a)) # &amp;lt;&amp;lt; 4 # &amp;lt;&amp;lt; 1 Potęgowanie #  x = 2**4 # == 16 </description>
+    </item>
+    
+    <item>
+      <title>Binary search</title>
+      <link>https://tpasternak.github.io/p2020/docs/07_binary_search/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/07_binary_search/</guid>
+      <description>from time import time tablica = [3, 5, 10, 11, 19, 25, 31, 35, 36] tablica = list(range(1,1000003,3)) szukana = 10000000000000000 t1 = time() # ALGORYTM 1 for i in range(len(tablica)): if tablica[i] == szukana: print(&amp;#34;Jest&amp;#34;) break elif i + 1 == len(tablica): print(&amp;#34;Nie ma&amp;#34;) t2 = time() print(f&amp;#34;Algorytm wykonywal sie {t2-t1:f}&amp;#34;) # ALGORYTM 2 t3 = time() poczatek = 0 koniec =len(tablica) while poczatek != koniec: srodek = (poczatek + koniec) // 2 if tablica[srodek] == szukana: print(&amp;#34;Jest&amp;#34;) break elif srodek == poczatek: print(&amp;#34;Nie ma&amp;#34;) break elif tablica[srodek] &amp;lt; szukana: poczatek = srodek else: koniec = srodek t4 = time() print(f&amp;#34;Algorytm 2 wykonywal sie {t4 - t3:f}&amp;#34;) </description>
+    </item>
+    
+    <item>
+      <title>Rekurencja</title>
+      <link>https://tpasternak.github.io/p2020/docs/08_rekurencja/</link>
+      <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/08_rekurencja/</guid>
+      <description>Silnia #  def silnia(n): if n == 0: return 1 else: return n * silnia(n - 1) Potęgowanie #  def potega(a, n): if n == 0: return 1 else: return a * potega(a, n - 1) def potega_szybka(a, n): if n == 0: return 1 if n % 2 == 0: return potega_szybka(a * a, n / 2) else: return a * potega_szybka(a, n - 1) </description>
+    </item>
+    
+    <item>
+      <title>Szyfr Cezara</title>
+      <link>https://tpasternak.github.io/p2020/docs/09_szyfr_cezara/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/09_szyfr_cezara/</guid>
+      <description>chr, ord #  text = input() klucz = -3 # ascii # ord, chr zaszyfrowany_text = &amp;#34;&amp;#34; for i in range(len(text)): litera = ord(text[i]) numer_litery = litera % 97 nowy_numer_litery = (numer_litery + klucz) % 26 nowy_kod_ascii_litery = nowy_numer_litery + 97 nowa_litera = chr(nowy_kod_ascii_litery) zaszyfrowany_text = zaszyfrowany_text + nowa_litera print(zaszyfrowany_text) </description>
+    </item>
+    
+    <item>
+      <title>Fibonacci</title>
+      <link>https://tpasternak.github.io/p2020/docs/10_fib/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/10_fib/</guid>
+      <description># n 0 1 2 3 4 5 6 7 8 # fibonacci(n) 1 1 2 3 5 8 13 21 34 from time import time def fibonacci(n): a = 1 b = 1 for i in range(n - 1): d = b b = a + b a = d return b licznik = 0 def fib(n): global licznik licznik += 1 if n == 0 or n == 1: return 1 else: return fib(n-1) + fib(n-2) print(fib(15)) print(licznik) </description>
+    </item>
+    
+    <item>
+      <title>Notacja binarna</title>
+      <link>https://tpasternak.github.io/p2020/docs/11_binary_notation/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/11_binary_notation/</guid>
+      <description>def do_formy_dziesietnej(binarna_liczba): a = 0 for i in reversed(range(len(binarna_liczba))): aktualna_potega = 2 ** (len(binarna_liczba) - (i + 1)) if binarna_liczba[i] == &amp;#34;1&amp;#34;: a += aktualna_potega return a x = do_formy_dziesietnej(&amp;#34;1110&amp;#34;) print(x) def z_formy_dziesietnej(n): potega = 1 while n &amp;gt; potega: potega = potega * 2 potega = potega // 2 lista = &amp;#39;&amp;#39; suma = 0 while potega != 0: if suma + potega &amp;lt;= n: lista = lista + &amp;#39;1&amp;#39; suma += potega else: lista = lista + &amp;#39;0&amp;#39; potega = potega // 2 return &amp;#34;&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Sortowanie przez wybieranie</title>
+      <link>https://tpasternak.github.io/p2020/docs/12_sort1/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/12_sort1/</guid>
+      <description>Algorytm sortowania przez wybieranie #  tablica = [15, 16, 12, 11] posortowana = [] licznik = 0 for j in range(len(tablica)): najmniejsza = tablica[0] index = 0 for i in range(len(tablica)): if najmniejsza &amp;gt;= tablica[i]: najmniejsza = tablica[i] index = i posortowana.append(najmniejsza) del tablica[index] print(posortowana) Złożoność obliczeniowa #  Dla tablicy o długości n wewnętrzna pętla wykona się n + (n-1) + ... + 1 razy.
+Możemy skorzystać ze znanej metody na policzenie tej sumy.</description>
+    </item>
+    
+    <item>
+      <title>Merge sort</title>
+      <link>https://tpasternak.github.io/p2020/docs/13_merge_sort/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tpasternak.github.io/p2020/docs/13_merge_sort/</guid>
+      <description>def merge(lewa, prawa): ll = len(lewa) lp = len(prawa) posortowana = [] i = 0 j = 0 for _ in range(lp + ll): if (j == lp) or (i != ll and (lewa[i] &amp;lt; prawa[j])): posortowana.append(lewa[i]) i += 1 else: posortowana.append(prawa[j]) j += 1 return posortowana def merge_sort(tablica): if len(tablica) &amp;lt;= 1: return tablica else: a = len(tablica) // 2 prawa = tablica[a:] lewa = tablica[:a] posortowana_lewa = merge_sort(lewa) posortowana_prawa = merge_sort(prawa) return merge(posortowana_lewa, posortowana_prawa) x = merge_sort([5,3,6,2,7,1,7,4]) print(x) </description>
+    </item>
+    
+  </channel>
+</rss>

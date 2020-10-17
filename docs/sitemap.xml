@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/01_if_while/</loc>
+    <lastmod>2020-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/02_functions/</loc>
+    <lastmod>2020-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/03_string_input_fizzbuzz/</loc>
+    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/04_for_list/</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/05_input/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/06_list_2/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/07_binary_search/</loc>
+    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/08_rekurencja/</loc>
+    <lastmod>2021-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/09_szyfr_cezara/</loc>
+    <lastmod>2021-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/10_fib/</loc>
+    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/11_binary_notation/</loc>
+    <lastmod>2021-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/12_sort1/</loc>
+    <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/13_merge_sort/</loc>
+    <lastmod>2021-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/docs/</loc>
+    <lastmod>2021-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/</loc>
+    <lastmod>2021-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tpasternak.github.io/p2020/tags/</loc>
+  </url>
+  
+</urlset>

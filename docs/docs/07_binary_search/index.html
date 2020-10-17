@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="from time import time tablica = [3, 5, 10, 11, 19, 25, 31, 35, 36] tablica = list(range(1,1000003,3)) szukana = 10000000000000000 t1 = time() # ALGORYTM 1 for i in range(len(tablica)): if tablica[i] == szukana: print(&#34;Jest&#34;) break elif i &#43; 1 == len(tablica): print(&#34;Nie ma&#34;) t2 = time() print(f&#34;Algorytm wykonywal sie {t2-t1:f}&#34;) # ALGORYTM 2 t3 = time() poczatek = 0 koniec =len(tablica) while poczatek != koniec: srodek = (poczatek &#43; koniec) // 2 if tablica[srodek] == szukana: print(&#34;Jest&#34;) break elif srodek == poczatek: print(&#34;Nie ma&#34;) break elif tablica[srodek] &lt; szukana: poczatek = srodek else: koniec = srodek t4 = time() print(f&#34;Algorytm 2 wykonywal sie {t4 - t3:f}&#34;) ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Binary search" />
+<meta property="og:description" content="from time import time tablica = [3, 5, 10, 11, 19, 25, 31, 35, 36] tablica = list(range(1,1000003,3)) szukana = 10000000000000000 t1 = time() # ALGORYTM 1 for i in range(len(tablica)): if tablica[i] == szukana: print(&#34;Jest&#34;) break elif i &#43; 1 == len(tablica): print(&#34;Nie ma&#34;) t2 = time() print(f&#34;Algorytm wykonywal sie {t2-t1:f}&#34;) # ALGORYTM 2 t3 = time() poczatek = 0 koniec =len(tablica) while poczatek != koniec: srodek = (poczatek &#43; koniec) // 2 if tablica[srodek] == szukana: print(&#34;Jest&#34;) break elif srodek == poczatek: print(&#34;Nie ma&#34;) break elif tablica[srodek] &lt; szukana: poczatek = srodek else: koniec = srodek t4 = time() print(f&#34;Algorytm 2 wykonywal sie {t4 - t3:f}&#34;) " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tpasternak.github.io/p2020/docs/07_binary_search/" />
+<meta property="article:published_time" content="2021-01-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-02T00:00:00+00:00" />
+<title>Binary search | Python</title>
+<link rel="manifest" href="/p2020/manifest.json">
+<link rel="icon" href="/p2020/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/p2020/book.min.96042bfbcb83a8bb3d1f5509767ce202ed11c380109c6767a2b2647b78a33994.css" integrity="sha256-lgQr&#43;8uDqLs9H1UJdnziAu0Rw4AQnGdnorJke3ijOZQ=">
+<script defer src="/p2020/en.search.min.c007a052eaab2ef6d2109921f507b590937ca7fc2eb605ea43981337fc39c833.js" integrity="sha256-wAegUuqrLvbSEJkh9Qe1kJN8p/wutgXqQ5gTN/w5yDM="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/p2020"><span>Python</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/01_if_while/" class="">Zmienne, If, While</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/02_functions/" class="">Funkcje</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/03_string_input_fizzbuzz/" class="">String, Input, Hurra</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/04_for_list/" class="">For, List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/05_input/" class="">Input</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/06_list_2/" class="">List 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/07_binary_search/" class=" active">Binary search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/08_rekurencja/" class="">Rekurencja</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/09_szyfr_cezara/" class="">Szyfr Cezara</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/10_fib/" class="">Fibonacci</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/11_binary_notation/" class="">Notacja binarna</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/12_sort1/" class="">Sortowanie przez wybieranie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://tpasternak.github.io/p2020/docs/13_merge_sort/" class="">Merge sort</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/p2020/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Binary search</strong>
+
+  <label for="toc-control">
+    
+    <img src="/p2020/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents"></nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
+
+tablica <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">36</span>]
+tablica <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1000003</span>,<span style="color:#ae81ff">3</span>))
+szukana <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000000000000000</span>
+
+t1 <span style="color:#f92672">=</span> time()
+<span style="color:#75715e"># ALGORYTM 1</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(tablica)):
+    <span style="color:#66d9ef">if</span> tablica[i] <span style="color:#f92672">==</span> szukana:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Jest&#34;</span>)
+        <span style="color:#66d9ef">break</span>
+    <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> len(tablica):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Nie ma&#34;</span>)
+t2 <span style="color:#f92672">=</span> time()
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Algorytm wykonywal sie {t2-t1:f}&#34;</span>)
+
+<span style="color:#75715e"># ALGORYTM 2</span>
+t3 <span style="color:#f92672">=</span> time()
+poczatek <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+koniec <span style="color:#f92672">=</span>len(tablica)
+
+<span style="color:#66d9ef">while</span> poczatek <span style="color:#f92672">!=</span> koniec:
+    srodek <span style="color:#f92672">=</span> (poczatek <span style="color:#f92672">+</span> koniec) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>
+    <span style="color:#66d9ef">if</span> tablica[srodek] <span style="color:#f92672">==</span> szukana:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Jest&#34;</span>)
+        <span style="color:#66d9ef">break</span>
+    <span style="color:#66d9ef">elif</span> srodek <span style="color:#f92672">==</span> poczatek:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Nie ma&#34;</span>)
+        <span style="color:#66d9ef">break</span>
+    <span style="color:#66d9ef">elif</span> tablica[srodek] <span style="color:#f92672">&lt;</span> szukana:
+        poczatek <span style="color:#f92672">=</span> srodek
+    <span style="color:#66d9ef">else</span>:
+        koniec <span style="color:#f92672">=</span> srodek
+t4 <span style="color:#f92672">=</span> time()
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Algorytm 2 wykonywal sie {t4 - t3:f}&#34;</span>)
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
